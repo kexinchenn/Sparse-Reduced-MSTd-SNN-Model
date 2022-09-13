@@ -30,7 +30,7 @@ public:
 		time_t seed = time(NULL);
 		srand(seed);
 
-		bool loadSimulation = true;
+		bool loadSimulation = false;
 		bool writeRes = true;
 		int runMode = 0; // 0: 3D heading; 1: Heading prediction; 2: Spiral selectivity; 3: Heading tuning
 
@@ -49,8 +49,8 @@ public:
 		int nMT = gridDim * gridDim * nNeuronPerPixel; 
 
 		// MST group dimensions 
-		int nMSTDim = 12;
-		Grid3D MSTDim(nMSTDim, nMSTDim, 1);
+		int nMSTDim = 8; 
+		Grid3D MSTDim(nMSTDim, nMSTDim, 1); // 8*8=64 MSTd neurons
 		int nMST = nMSTDim * nMSTDim; 
 		
 		// Inh group dimensions 

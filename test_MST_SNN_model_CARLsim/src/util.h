@@ -15,3 +15,5 @@ int randGenerator (int i);
 void shuffleTrials(int numTrials, int numTrain, int numTest, int *trainTrials, int *testTrials);
 
 float calcCorr(float** X, float** Y, int numRow, int numCol);
+
+float calcPopCorrCoef(float* x,float* y, int length);
