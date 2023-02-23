@@ -9,6 +9,8 @@ numSpeeds = 5;
 vecSpeeds = 2.^(linspace(log2(0.5), log2(16), numSpeeds));
 numDirs = 8;
 vecDirs = (0:numDirs-1)/numDirs*2*pi;
+
+dimPx = [15, 15];
 nMT = prod(dimPx) * numSpeeds * numDirs;
 
 % initialize models
